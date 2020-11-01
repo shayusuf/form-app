@@ -1,0 +1,29 @@
+.header{
+    padding:5px;
+    background-color: #283593;
+    color: white;
+    margin-bottom: 0%;
+}
+#a{
+    font-size: x-large;
+    margin-right: 40em;
+}
+#b{
+    margin-right: 10px;
+}
+#d{ margin-left: 30px;}
+.start{
+    padding: 5px;
+    background-color: whitesmoke;
+    font-size: x-large;
+    margin-bottom: 0%;
+}
+.input_form{
+ margin-left: 30px;  
+}
+.input-form-field{
+    width: 50%;
+}
+button{
+    margin-left: 30px;
+}

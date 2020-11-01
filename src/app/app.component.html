@@ -1,0 +1,32 @@
+<div class = "header">
+  <span id = "a">Home</span><span id = "b">Register</span><span id = "c">Home</span>
+</div>
+<div class = "start"><p>Registration</p></div>
+<div class = "input_form">
+  <mat-form-field class = "input-form-field">
+    <input matInput placeholder="First Name*" [(ngModel)] = "first_name">
+  </mat-form-field><br>
+  <mat-form-field class = "input-form-field">
+    <input matInput placeholder="Last Name*" [(ngModel)] = "last_name">
+  </mat-form-field><br>
+  <mat-form-field class = "input-form-field">
+    <input matInput placeholder="Address*" [(ngModel)] = "address">
+  </mat-form-field><br>
+  <mat-form-field class = "input-form-field">
+    <input matInput placeholder="Email" [(ngModel)] = "email">
+  </mat-form-field><br>
+  <mat-form-field class = "input-form-field">
+    <input matInput placeholder="Password" [(ngModel)] = "password">
+  </mat-form-field><br>
+  <label >Gender:</label><br><br>
+  <mat-radio-group aria-label="Select an option" [(ngModel)] = "gender">
+    <mat-radio-button *ngFor="let g of genders" [value]="g">{{g}}&nbsp;&nbsp;</mat-radio-button>
+  </mat-radio-group><br><br>
+</div>
+<mat-form-field appearance="fill" id = "d">
+  <mat-label>Date of Birth</mat-label>
+  <input matInput [matDatepicker]="picker">
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field><br><br>
+<button mat-raised-button color="primary">Register</button>
